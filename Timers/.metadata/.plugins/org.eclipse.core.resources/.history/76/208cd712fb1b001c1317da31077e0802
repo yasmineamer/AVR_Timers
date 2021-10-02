@@ -1,0 +1,53 @@
+/*
+ * TIMERS_CHALLENGE1.C
+ *
+ *  Created on: Sep 22, 2021
+ *      Author: YASMINE AMER
+ */
+
+/*
+ *
+ *F_CPU = 8 MHZ
+ *7_SEGMENT CONNECTED TO PORTC
+ *PRESCALER 256
+ *EVERY SECOND THE 7_SEGMENT SHOULD BE INCREMENT USING TIMER0
+ *AFTER 9 OVERFLOW OCCOURS
+ *
+ */
+
+/***CALCULATION**/
+/*
+ * F_TIMER = 8MHZ / 256
+ * T_TIMER = 256 / 8MHZ = 0.032 ms
+ * T_OVF = 256 * 0.032 = 8.192 ms
+ * NUMBER OF OVF PER SECOND = 123
+ */
+
+#include<avr/io.h>
+#include<avr/interrupt.h>
+
+#define NUM_OVF_PER_SECOND 123
+unsigned char g_ticks = 0 ;
+unsigned char g_num = 123;
+
+/***interrupt service routine**/
+
+ISR(TIMER0_OVF_vect)
+{
+
+}
+
+void timer0_ovf_init (void)
+{
+
+}
+
+int main(void)
+{
+	/*
+	 * PORTC OUTPUT ==> SET ALL BITS
+	 * PORTC INTIAL VALUE 0
+	 */
+	DDRC = 0XFF ;
+
+}

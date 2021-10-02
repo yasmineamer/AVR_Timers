@@ -1,0 +1,34 @@
+/*
+ * Timers_ex4.c
+ *
+ *  Created on: Sep 25, 2021
+ *      Author:YASMINE AMER
+ */
+
+
+                                   /*TASK*/
+
+/*
+ *generate a 500Hz clock using PWM
+ * presacler = 8
+ *
+ */
+
+                              /**calculation**/
+
+/*
+ * F_CPU = 1MHZ
+ * F_TIME = 1/8 MHZ
+ * TIMER_TIME_PERIOD = 8 MICROSECOND
+ * DUTY CYCLE = 0.5
+ * TIME_ON = 0.5*8MICROSECOND =4 MICROSECOND
+ * TO GET 50% DUTY CYCLE ==> OCR0 = 128
+ * DELAY 5000 MS
+ * TO GET 25% DUTY CYCLE ==> OCR0 = 64
+ */
+
+void timer0_pwm_init (void)
+{
+	TCNT0 = 0;
+
+}

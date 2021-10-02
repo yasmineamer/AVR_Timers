@@ -1,0 +1,34 @@
+22:00:11 **** Incremental Build of configuration Debug for project Timers_ex2 ****
+make all 
+Building file: ../Timers_ex2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timers_ex2.d" -MT"Timers_ex2.o" -c -o "Timers_ex2.o" "../Timers_ex2.c"
+Finished building: ../Timers_ex2.c
+ 
+Building target: Timers_ex2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Timers_ex2.map -mmcu=atmega16 -o "Timers_ex2.elf"  ./Timers_ex2.o   
+Finished building target: Timers_ex2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Timers_ex2.elf  >"Timers_ex2.lss"
+Finished building: Timers_ex2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Timers_ex2.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     328 bytes (2.0% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+22:00:12 Build Finished. 0 errors, 0 warnings. (took 710ms)
+

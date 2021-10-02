@@ -1,0 +1,36 @@
+02:25:32 **** Incremental Build of configuration Debug for project Timers_Challenge1 ****
+make all 
+Building file: ../challenge1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"challenge1.d" -MT"challenge1.o" -c -o "challenge1.o" "../challenge1.c"
+../challenge1.c:25:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+Finished building: ../challenge1.c
+ 
+Building target: Timers_Challenge1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Timers_Challenge1.map -mmcu=atmega16 -o "Timers_Challenge1.elf"  ./challenge1.o   
+Finished building target: Timers_Challenge1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Timers_Challenge1.elf  >"Timers_Challenge1.lss"
+Finished building: Timers_Challenge1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Timers_Challenge1.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     550 bytes (3.4% Full)
+(.text + .data + .bootloader)
+
+Data:          2 bytes (0.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+02:25:32 Build Finished. 0 errors, 1 warnings. (took 672ms)
+

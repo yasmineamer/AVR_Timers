@@ -1,0 +1,36 @@
+05:56:50 **** Build of configuration Debug for project Timers_ex5 ****
+make all 
+Building file: ../Timers_ex5.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timers_ex5.d" -MT"Timers_ex5.o" -c -o "Timers_ex5.o" "../Timers_ex5.c"
+In file included from ../Timers_ex5.c:17:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Timers_ex5.c
+ 
+Building target: Timers_ex5.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Timers_ex5.map -mmcu=atmega16 -o "Timers_ex5.elf"  ./Timers_ex5.o   
+Finished building target: Timers_ex5.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Timers_ex5.elf  >"Timers_ex5.lss"
+Finished building: Timers_ex5.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Timers_ex5.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    3590 bytes (21.9% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+05:56:51 Build Finished. 0 errors, 1 warnings. (took 1s.20ms)
+

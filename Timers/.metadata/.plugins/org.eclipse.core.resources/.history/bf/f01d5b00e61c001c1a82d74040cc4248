@@ -1,0 +1,33 @@
+/*
+ * Timers_ex3.c
+ *
+ *  Created on: Sep 24, 2021
+ *      Author: YASMINE AMER
+ */
+
+
+                     /* GENERATE SQUARE WAVE 2KHZ USING TIMER0 COMPARE MODE */
+                                           /*CALCULATION*/
+
+/*
+ * SQ_WAVE =2KHZ
+ * period OF SQ WAVE = 0.5 ms
+ * T_TIMER = 1 MICRO SECOND
+ * TIMER_COUNT = 500 COUNTS FOR ONE CYCLE
+ * TO HALF CYCLE COUNT  = 250
+ */
+
+#include<avr/io.h>
+#include<avr/interrupt.h>
+
+void Timer0_comp_init(void)
+{
+
+}
+
+int main (void)
+{
+	SREG |= (1<<7); //ENABLE GLOBAL INTERRUPT BIT I-BIT
+	Timer0_comp_init();
+
+}

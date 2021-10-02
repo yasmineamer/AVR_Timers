@@ -1,0 +1,18 @@
+06:57:54 **** Build of configuration Debug for project challenge 3 ****
+make all 
+Building file: ../challenge3.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"challenge3.d" -MT"challenge3.o" -c -o "challenge3.o" "../challenge3.c"
+../challenge3.c:19:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+Finished building: ../challenge3.c
+ 
+Building target: challenge 3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,challenge 3.map -mmcu=atmega16 -o "challenge 3.elf"  ./challenge3.o   
+avr-gcc.exe: 3.map: No such file or directory
+make: *** [challenge 3.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+06:57:55 Build Failed. 1 errors, 1 warnings. (took 447ms)
+

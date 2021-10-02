@@ -1,0 +1,29 @@
+/*
+ * Challenge2.c
+ *
+ *  Created on: Sep 25, 2021
+ *      Author: Yasmine Amer
+ */
+
+
+                               /*task*/
+/*
+ * generate 3 digital clocks with frequency 10khz
+ * 5khz and 2.5khz using timer0 ctc_mode
+ */
+
+                               /*calculations*/
+/*
+ * cpu_frequency = 8MHZ
+ * Prescaler = 8
+ * T_timer = 1MHZ
+ * timer counts = 0.1ms / 1microsecond = 100
+ * duty cycle 50% ==> OCR0 = 50
+ */
+#define F_CPU 8000000
+
+#include<avr/io.h>
+#include<avr/interrupt.h>
+
+ISR()
+

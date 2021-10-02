@@ -1,0 +1,17 @@
+06:59:30 **** Incremental Build of configuration Debug for project Timers_challenge3 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Timers_challenge3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     184 bytes (1.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
